@@ -5,36 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Will West - About</title>
 </head>
 
 <body>
-    <header>
-        <div class="page">
-            <h1 class="title">Will West</h1>
-            <div class="spacer"></div>
-            <div class="navbar">
-                <a href="#" class="nav-button">
-                    About
-                    <div class="current-page">
+    <header class="bg-light">
+        <div class="container"><!--Makes the navbar resize the same as the content area-->
+            <div class="row">
+                <nav class="navbar navbar-expand navbar-light bg-light">
+                    <span class="navbar-brand">Will West</span>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="nav-button">
-                    Portfolio
-                </a>
-                <a href="contact.html" class="nav-button">
-                    Contact
-                </a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="content page">
-        <div class="content-box clearfix">
-            <h2 class="page-title">About Me</h2>
+    <div class="container grow">
+        <div class="content-box bg-light clearfix ">
+            <h2 class="display-4 teal">About Me</h2>
             <article>
-                <img src="assets/images/picture.png" alt="" class="portrait">
+                <img src="assets/images/picture.png" alt="" class="img-fluid float-left portrait">
                 <p>I'm a classically trained saxophonist and composer. I studied at Georgia State University under Dr.
                     Jan Baker. I play all kinds of music, from baroque music such as Bach's Cello Suites, to 21st
                     century avant garde works, and everything in between. My compositional style is very modern, yet
@@ -47,7 +56,7 @@
             </article>
         </div>
     </div>
-    <footer>
+    <footer class="card-footer bg-dark footer-font-style text-muted footer-position">
         Copyright 2019 Will West
     </footer>
 </body>
