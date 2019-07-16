@@ -5,46 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Will West - Contact</title>
+    <title>Will West - Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="page">
-            <h1 class="title">Will West</h1>
-            <div class="spacer"></div>
-            <div class="navbar">
-                <a href="index.html" class="nav-button">
-                    About
-                </a>
-                <a href="portfolio.html" class="nav-button">
-                    Portfolio
-                </a>
-                <a href="#" class="nav-button">
-                    Contact
-                    <div class="current-page">
+    <header class="bg-light">
+        <div class="container">
+            <!--Makes the navbar resize the same as the content area-->
+            <div class="row">
+                <nav class="navbar navbar-expand navbar-light bg-light">
+                    <span class="navbar-brand">Will West</span>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">
+                                    Portfolio <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="content page">
-        <div class="content-box clearfix">
-            <h2 class="page-title">Contact</h2>
+    <div class="container grow">
+        <div class="content-box bg-light clearfix ">
+            <h2 class="display-4 teal">Contact</h2>
             <form>
-                <label>Name</label>
-                <input type="text" name="name" placeholder="Your Name" />
-                <label>Email</label>
-                <input type="text" name="email" placeholder="example@gmail.com" />
-                <label>Message</label>
-                <textarea type="text" name="message" placeholder="Your message goes here..." rows=12></textarea>
-                <input id=submit type="submit">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="name" class="form-control" id="inputName" aria-describeby="nameHelp"
+                        placeholder="Your Name" />
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                        placeholder="Enter email" />
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea type="name" class="form-control" id="inputMame" aria-describeby="messageHelp"
+                        placeholder="Your message goes here" rows=8></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
-    <footer>
+    <footer class="card-footer bg-dark footer-font-style text-muted footer-position">
         Copyright 2019 Will West
     </footer>
 </body>
